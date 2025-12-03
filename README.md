@@ -1,5 +1,10 @@
 # Minecraft Version Validator
 
+![](https://img.shields.io/npm/v/minecraft-version-validator?style=for-the-badge)
+![](https://img.shields.io/github/actions/workflow/status/iamkaf/minecraft-version-validator/test.yml?branch=main&style=for-the-badge&label=tests)
+![](https://img.shields.io/npm/l/minecraft-version-validator?style=for-the-badge)
+![](https://img.shields.io/badge/TypeScript-5.9.3-blue?style=for-the-badge&logo=typescript)
+
 A TypeScript library to validate Minecraft version strings.
 
 ## Installation

@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { isValidMinecraftVersion } from '../src/index';
-import manifestData from '../version_manifest_copy.json';
+import manifestData from './version_manifest_copy.json';
 
 describe('isValidMinecraftVersion', () => {
   describe('Modern release versions', () => {

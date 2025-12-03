@@ -8,11 +8,12 @@
     "build": "tsc",
     "test": "vitest run",
     "dev": "vitest",
-    "generate-versions": "npx tsx scripts/generate-version-set.ts"
+    "generate-versions": "npx tsx scripts/generate-version-set.ts",
+    "prepack": "npm run build"
   },
   "keywords": ["minecraft", "version", "validator", "typescript"],
-  "author": "",
-  "license": "ISC",
+  "author": "Kaf",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "typescript": "^5.9.3",

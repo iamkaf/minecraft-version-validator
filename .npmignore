@@ -1,0 +1,90 @@
+# Source files (we only include compiled dist/)
+src/
+scripts/
+test/
+*.test.ts
+*.spec.ts
+
+# Development files
+tsconfig.json
+vitest.config.*
+.nyc_output
+coverage/
+
+# Claude files
+.claude/
+
+# GitHub workflows
+.github/
+
+# Development dependencies
+node_modules/
+
+# Build artifacts
+*.tgz
+
+# Development logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory
+coverage/
+.nyc_output
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.test
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test data (not needed for consumers)
+version_manifest_copy.json

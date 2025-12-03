@@ -24,7 +24,7 @@ interface ManifestData {
  * Usage: npm run generate-versions
  */
 
-const manifestPath = path.join(process.cwd(), 'version_manifest_copy.json');
+const manifestPath = path.join(process.cwd(), 'test', 'version_manifest_copy.json');
 const outputPath = path.join(process.cwd(), 'src', 'version-set.ts');
 
 try {

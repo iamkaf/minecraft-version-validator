@@ -1,7 +1,7 @@
 /**
  * Auto-generated Set of all known Minecraft versions
  * Generated with: npm run generate-versions
- * Last updated: 2025-12-03T19:00:36.919Z
+ * Last updated: 2025-12-03T19:18:16.647Z
  */
 export const ALL_KNOWN_VERSIONS = new Set([
   "1.21.11-pre5",
