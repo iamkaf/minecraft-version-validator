@@ -19,7 +19,10 @@ export function isValidMinecraftVersion(version: string): boolean {
 
   // Fallback to patterns for future versions not in the manifest
   const futurePatterns = [
-    // New year-based format (future compatibility)
+    // Standard semantic versioning format (future compatibility)
+    // Examples: 1.21.11, 1.22.0, 1.22.1, 1.21.11-pre1, 1.21.11-rc1
+    /^1\.\d{1,2}\.\d{1,2}(?:-(?:pre|rc)[1-9]\d{0,2})?$/,
+    // New year-based format (future compatibility that started in 2026)
     // Examples: 26.1, 26.1.1, 26.1-snapshot-1, 26.1-pre-1, 26.1-rc-1
     /^[2-5]\d\.\d{1,2}(?:\.\d{1,2})?(?:-(?:snapshot|pre|rc)-[1-9]\d{0,2})?$/
   ];

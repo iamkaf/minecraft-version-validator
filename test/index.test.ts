@@ -67,6 +67,21 @@ describe('isValidMinecraftVersion', () => {
     });
   });
 
+  describe('Future semantic versioning format', () => {
+    it('should validate future 1.x versions not in manifest', () => {
+      expect(isValidMinecraftVersion('1.21.11')).toBe(true);
+      expect(isValidMinecraftVersion('1.22.0')).toBe(true);
+      expect(isValidMinecraftVersion('1.22.1')).toBe(true);
+      expect(isValidMinecraftVersion('1.23.5')).toBe(true);
+    });
+
+    it('should validate future 1.x versions with pre-releases', () => {
+      expect(isValidMinecraftVersion('1.21.11-pre1')).toBe(true);
+      expect(isValidMinecraftVersion('1.22.0-rc1')).toBe(true);
+      expect(isValidMinecraftVersion('1.23.5-pre2')).toBe(true);
+    });
+  });
+
   describe('Legacy alpha versions', () => {
     it('should validate alpha versions', () => {
       expect(isValidMinecraftVersion('a1.2.6')).toBe(true);
