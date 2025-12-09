@@ -1,6 +1,6 @@
 {
   "name": "minecraft-version-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript library to validate Minecraft version strings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -11,7 +11,12 @@
     "generate-versions": "npx tsx scripts/generate-version-set.ts",
     "prepack": "npm run build"
   },
-  "keywords": ["minecraft", "version", "validator", "typescript"],
+  "keywords": [
+    "minecraft",
+    "version",
+    "validator",
+    "typescript"
+  ],
   "author": "Kaf",
   "license": "MIT",
   "type": "module",
